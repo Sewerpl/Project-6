@@ -9,6 +9,7 @@
 class Record {
 public:
     std::string date;  // Data w formacie YYYY-MM-DD
+    std::string time;  // Godzina w formacie HH:MM
 
 };
 
