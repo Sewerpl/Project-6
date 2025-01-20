@@ -22,6 +22,15 @@ public:
         : date(date), time(time), autokonsumpcja(autokonsumpcja), eksport(eksport),
           import_(import_), pobor(pobor), produkcja(produkcja) {}
 
+    // Funkcja zwracająca tekstową reprezentację rekordu
+    std::string toString() const {
+        std::ostringstream oss;
+        oss << "Record(date=" << date << ", time=" << time
+            << ", autokonsumpcja=" << autokonsumpcja
+            << ", eksport=" << eksport << ", import=" << import_
+            << ", pobor=" << pobor << ", produkcja=" << produkcja << ")";
+        return oss.str();
+    }
 };
 
 #endif // RECORD_H
