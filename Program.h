@@ -11,7 +11,11 @@ private:
     int validRecords = 0;   // Liczba poprawnych rekordów
     int invalidRecords = 0; // Liczba błędnych rekordów
 
-    
+    // Funkcje pomocnicze
+    bool parseLine(const std::string& line, Record& record);
+    void logMessage(const std::string& message, const std::string& logFile);
+
+
 };
 
 #endif // PROGRAM_H
