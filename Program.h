@@ -8,6 +8,7 @@
 class Program {
 private:
     Tree tree; // Drzewo danych
+    int validRecords = 0;   // Liczba poprawnych rekordów
 
 };
 
