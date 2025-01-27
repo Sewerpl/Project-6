@@ -19,6 +19,11 @@ public:
     // Wczytywanie pliku CSV
     void loadCSV(const std::string& fileName);
 
+    // Zapis/odczyt z pliku binarnego
+    void saveToBinary(const std::string& fileName);
+    void loadFromBinary(const std::string& fileName);
+
+ 
 };
 
 #endif // PROGRAM_H
