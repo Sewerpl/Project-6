@@ -39,6 +39,9 @@ public:
 
     std::map<int, Year> years; // Korzeń drzewa (lata)
 
+    // Dodawanie rekordu do odpowiedniego miejsca w drzewie
+    void addRecord(const Record& record);
+
 
 };
 
