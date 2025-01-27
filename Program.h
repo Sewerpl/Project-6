@@ -23,7 +23,19 @@ public:
     void saveToBinary(const std::string& fileName);
     void loadFromBinary(const std::string& fileName);
 
- 
+    // Operacje analizy danych
+    void calculateSum(const std::string& startDate, const std::string& startTime,
+                      const std::string& endDate, const std::string& endTime, const std::string& type);
+    void calculateAverage(const std::string& startDate, const std::string& startTime,
+                          const std::string& endDate, const std::string& endTime, const std::string& type);
+    void compareRanges(const std::string& startDate1, const std::string& startTime1,
+                       const std::string& endDate1, const std::string& endTime1,
+                       const std::string& startDate2, const std::string& startTime2,
+                       const std::string& endDate2, const std::string& endTime2, const std::string& type);
+    void searchRecords(double value, double tolerance, const std::string& startDate,
+                       const std::string& startTime, const std::string& endDate, const std::string& endTime, const std::string& type);
+
+
 };
 
 #endif // PROGRAM_H
