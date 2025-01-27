@@ -37,7 +37,9 @@ public:
         std::map<int, Month> months; // Miesiące w roku
     };
 
-  
+    std::map<int, Year> years; // Korzeń drzewa (lata)
+
+
 };
 
 #endif // TREE_H
