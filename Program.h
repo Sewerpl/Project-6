@@ -15,6 +15,9 @@ private:
     bool parseLine(const std::string& line, Record& record);
     void logMessage(const std::string& message, const std::string& logFile);
 
+public:
+    // Wczytywanie pliku CSV
+    void loadCSV(const std::string& fileName);
 
 };
 
