@@ -28,4 +28,14 @@ void Program::loadCSV(const std::string& fileName) {
     std::cout << "Wczytywanie zakończone. Poprawne: " << validRecords << ", Błędne: " << invalidRecords << std::endl;
 }
 
+bool Program::parseLine(const std::string& line, Record& record) {
+    std::istringstream iss(line);
+    std::string date, time;
+    double autokonsumpcja, eksport, import_, pobor, produkcja;
+
+    if (iss >> date >> time >> autokonsumpcja >> eksport >> import_ >> pobor >> produkcja) {
+        record = Record(date, time, autokonsumpcja, eksport, import_, pobor, produkcja);
+        return true;
+    }
+    return false;
 }
