@@ -35,7 +35,8 @@ public:
     void searchRecords(double value, double tolerance, const std::string& startDate,
                        const std::string& startTime, const std::string& endDate, const std::string& endTime, const std::string& type);
 
-
+    // Menu główne
+    void menu();
 };
 
 #endif // PROGRAM_H
