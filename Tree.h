@@ -29,6 +29,9 @@ public:
         std::map<int, Quarter> quarters; // Ćwiartki: 0-3
     };
 
-};
+    struct Month {
+        std::map<int, Day> days; // Dni w miesiącu
+    };
+
 
 #endif // TREE_H
