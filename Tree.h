@@ -25,6 +25,10 @@ public:
         std::vector<Record> records; // Dane dla ćwiartki
     };
 
+    struct Day {
+        std::map<int, Quarter> quarters; // Ćwiartki: 0-3
+    };
+
 };
 
 #endif // TREE_H
