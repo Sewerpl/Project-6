@@ -33,5 +33,11 @@ public:
         std::map<int, Day> days; // Dni w miesiącu
     };
 
+    struct Year {
+        std::map<int, Month> months; // Miesiące w roku
+    };
+
+  
+};
 
 #endif // TREE_H
