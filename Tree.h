@@ -42,7 +42,8 @@ public:
     // Dodawanie rekordu do odpowiedniego miejsca w drzewie
     void addRecord(const Record& record);
 
-
+    // Funkcja pomocnicza: przekształcanie czasu na ćwiartkę
+    static int getQuarter(const std::string& time);
 };
 
 #endif // TREE_H
